@@ -46,9 +46,9 @@ const CreatePost = () => {
             {users.map((ele) => (<option key={ele.id} value={ele.id}>{ele.name}</option>))}
           </select>
           <label> Title </label>
-          <input className="form-control form-control-sm  mb-2" name="title" value={state.title} onChange={changehandle} />
+          <input className="form-control form-control-sm  mb-2" name="title" value={state.title} onChange={changehandle} required/>
           <label> Body </label>
-          <input className="form-control form-control-sm  " name="body" value={state.body}onChange={changehandle}/>
+          <input className="form-control form-control-sm  " name="body" value={state.body}onChange={changehandle} required />
           <br/>
           <button className=" btn btn-primary" onClick={submithandler}>Submit</button>
         </div>
