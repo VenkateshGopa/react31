@@ -1,0 +1,90 @@
+.top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  /* background: rgba(0, 23, 24, 0.445);
+  background: radial-gradient(
+    circle,
+    rgba(0, 23, 24, 0.452) 50%,
+    rgba(58, 224, 196, 0.185) 100%
+  ); */
+  background-color: rgba(255, 255, 255, 0.199);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: left;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 40rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 5;
+}
+.first {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first i {
+  background-color: #65f5f517;
+  color: white;
+  font-size: 5rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 50%;
+}
+.first p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.second p {
+  font-size: 25px;
+}
+.top ul {
+  padding: 0 10px;
+}
+.top img{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+}
+/* .second a {
+  text-decoration: none;
+  background-color: rgba(0, 255, 255, 0.26);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.second a:hover,
+.second a:active {
+  color: white;
+  background-color: rgba(0, 255, 255, 0.37);
+} */
+@media screen and (max-width: 500px) {
+  .first i {
+    font-size: 2rem;
+    padding: 1rem 1.8rem;
+  }
+  .first p {
+    font-size: 9px;
+  }
+  .second p {
+    font-size: 9px;
+  }
+}

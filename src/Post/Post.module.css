@@ -1,0 +1,49 @@
+.card{
+    background-color:rgba(247, 247, 247, 0.301);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    width:60%;
+    margin-left: 20%;
+}
+.title{
+    font-family: 'Satisfy', cursive;
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+}
+.message{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.buttons{
+    flex-direction: row;
+}
+.buttons i{
+    margin: 60px 10px;
+    color: black;
+}
+.body{
+    width: 75%;
+    padding-left: 10px;
+}
+.buttons a:hover,a:active,i:hover {
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+.delete:hover{
+    color: rgba(255, 0, 0, 0.712);
+}
+@media screen and (max-width:700px){
+    .card{
+        width:80%;
+        margin-left: 10%;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons i{
+        margin: 45px 10px;
+    }
+}
